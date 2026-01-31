@@ -2,12 +2,14 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import axios from "axios";
 
+const baseURL = process.env.NEXT_PUBLIC_BASEURL;
+
 // CREATE NEW BLOG REQUEST
 export const useCreateBlogRequest = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async ({ payload }: { payload: any }) => {
-      const response = await axios.post("/api/blogs", payload);
+      const response = await axios.post(`${baseURL}/api/blogs`, payload);
       return response.data;
     },
     onSuccess: (data) => {
@@ -29,7 +31,7 @@ export const useGetBlogsRequest = (pageNumber: number = 1, limit: number) => {
   return useQuery({
     queryKey: ["blogs"],
     queryFn: async () => {
-      const response = await axios.get("/api/blogs", {
+      const response = await axios.get(`${baseURL}/api/blogs`, {
         params: { pageNumber, limit },
       });
       return response.data;
@@ -42,7 +44,7 @@ export const useGetBlogRequest = (blogSlug: string) => {
   return useQuery({
     queryKey: ["blog", blogSlug],
     queryFn: async () => {
-      const response = await axios.get(`/api/blogs/${blogSlug}`);
+      const response = await axios.get(`${baseURL}/api/blogs/${blogSlug}`);
       return response.data;
     },
     enabled: !!blogSlug,
@@ -60,7 +62,7 @@ export const useUpdateBlogRequest = () => {
       blogId: string;
       payload: any;
     }) => {
-      const response = await axios.put(`/api/blogs/${blogId}`, payload);
+      const response = await axios.put(`${baseURL}/api/blogs/${blogId}`, payload);
       return response.data;
     },
     onSuccess: (data) => {
@@ -82,7 +84,7 @@ export const useDeleteBlogRequest = () => {
   const queryClient = useQueryClient();
   return useMutation({
     mutationFn: async ({ blogId }: { blogId: string }) => {
-      const response = await axios.delete(`/api/blogs/${blogId}`);
+      const response = await axios.delete(`${baseURL}/api/blogs/${blogId}`);
       return response.data;
     },
     onSuccess: (data) => {
