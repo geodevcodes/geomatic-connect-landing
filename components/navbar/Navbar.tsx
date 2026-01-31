@@ -22,11 +22,11 @@ const routes = [
 const mobileRoutes = [
   {
     name: "Log in",
-    href: "/login",
+    href: "https://app.geomaticconnect.work/",
   },
   {
     name: "Sign Up",
-    href: "/signup",
+    href: "https://app.geomaticconnect.work/signup",
   },
   {
     name: "Blog",
