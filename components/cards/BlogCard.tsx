@@ -1,4 +1,4 @@
-import { shimmer, toBase64 } from "@/app/components/skeletons/Shimmer";
+import { shimmer, toBase64 } from "@/components/skeletons/Shimmer";
 import { ArrowRight, Clock4 } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
