@@ -65,7 +65,7 @@ export default function RootLayout({
             {children}
           </ThemeProvider>
         </SessionProviderPage>
-        <Toaster position="top-center" richColors={true} />
+        <Toaster position="bottom-right" richColors={true} />
         <PWAInstallPrompt />
       </body>
     </html>
