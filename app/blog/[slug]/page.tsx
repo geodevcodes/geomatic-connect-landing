@@ -1,9 +1,12 @@
 import BlogDetails from "@/components/landing-page-components/BlogDetails";
 import { redirect } from "next/navigation";
 
-export default async function BlogDetailsPage({ params }: { params: any }) {
-  const blogSlug = params?.slug;
-
+export default async function BlogDetailsPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug: blogSlug } = await params;
   if (!blogSlug) {
     redirect("/blog");
   }
