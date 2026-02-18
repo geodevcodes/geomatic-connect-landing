@@ -22,11 +22,11 @@ const routes = [
 const mobileRoutes = [
   {
     name: "Log in",
-    href: "https://app.geomaticconnect.work/",
+    href: "https://staging.geomaticconnect.work/",
   },
   {
     name: "Sign Up",
-    href: "https://app.geomaticconnect.work/signup",
+    href: "https://staging.geomaticconnect.work/signup",
   },
   {
     name: "Blog",
@@ -110,7 +110,7 @@ export default function Navbar() {
             </div>
             {/* ======== Login & Sign Up ====== */}
             <Link
-              href="https://app.geomaticconnect.work"
+              href="https://staging.geomaticconnect.work"
               className="relative group p-3 font-medium rounded-md mx-2 hover:text-[#014751] dark:hover:text-secondary-foreground"
             >
               Login
@@ -124,7 +124,7 @@ export default function Navbar() {
               className="w-fit"
             >
               <Link
-                href="https://app.geomaticconnect.work/signup"
+                href="https://staging.geomaticconnect.work/signup"
                 className="bg-[#014751] hover:bg-[#014751]/90 dark:bg-muted dark:border px-3 py-2 text-sm font-normal text-[#FFFFFF] rounded-md"
               >
                 Create free account
