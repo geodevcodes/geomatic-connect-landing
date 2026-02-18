@@ -47,7 +47,7 @@ export default function ContactUs() {
               className="w-fit"
             >
               <Link
-                href="/signup"
+                href="https://staging.geomaticconnect.work/signup"
                 className="p-3 lg:p-4 mt-2 md:mt-3 lg:mt-0 bg-[#FFFFFF] text-xs border-[1.3px] border-[#014751] text-[#014751] rounded-xl w-[150px] md:w-[180px] text-center flex items-center justify-center font-semibold cursor-pointer"
               >
                 Register Now

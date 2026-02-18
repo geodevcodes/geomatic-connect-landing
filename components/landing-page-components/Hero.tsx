@@ -52,7 +52,10 @@ export default function Hero() {
             className="w-fit"
           >
             <button className="bg-secondary dark:bg-muted px-6 py-2.5 text-sm font-normal text-primary dark:text-[#FFFFFF] rounded-md relative group">
-              <Link href="/signup" className="relative flex gap-2 items-center">
+              <Link
+                href="https://staging.geomaticconnect.work/signup"
+                className="relative flex gap-2 items-center"
+              >
                 <span>Create free account</span>
                 <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
@@ -65,7 +68,9 @@ export default function Hero() {
             }}
           >
             <button className="bg-secondary border dark:border-muted dark:hover:bg-muted px-5 py-2.5 text-sm font-normal text-primay dark:text-[#FFFFFF] rounded-md hidden md:flex items-center">
-              <Link href="/blog">Explore career tips</Link>
+              <Link href="https://staging.geomaticconnect.work/blog">
+                Explore career tips
+              </Link>
             </button>
           </motion.div>
         </div>
