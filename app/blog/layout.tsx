@@ -1,4 +1,3 @@
-// import BottomNav from "@/app/components/navbar/BottomNav";
 // import TawkChat from "@/app/components/chatbot/TawkChat";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
@@ -43,7 +42,6 @@ export default async function BlogLayout({
           <Navbar />
         </div>
         {children}
-        {/* <BottomNav /> */}
       </div>
     </>
   );

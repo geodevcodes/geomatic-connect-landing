@@ -8,7 +8,6 @@ import Faq from "@/components/landing-page-components/Faq";
 import Navbar from "@/components/navbar/Navbar";
 import type { Metadata } from "next";
 // import TawkChat from "@/app/components/chatbot/TawkChat";
-// import BottomNav from "@/app/components/navbar/BottomNav";
 
 export const metadata: Metadata = {
   title: "Home | Geomatic Connect",
@@ -86,7 +85,6 @@ export default function Home() {
         </div>
       </main>
       {/* <TawkChat /> */}
-      {/* <BottomNav /> */}
     </>
   );
 }
