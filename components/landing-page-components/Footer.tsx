@@ -3,6 +3,7 @@ import GeomaticLogo from "@/public/images/Geomatic-Connect-Logo2w.png";
 import { footerData } from "@/utils/FooterData";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Footer = () => {
   const router = useRouter();
@@ -75,12 +76,13 @@ export const Footer = () => {
         <div className="cursor-pointer lg:flex justify-between items-center border-t-[.23px] border-white dark:border-t-[1.5px] dark:border-muted pt-8">
           <div className="flex gap-2">
             {socialMedia.map((item, index) => (
-              <span
+              <Link
+                href={item.href}
                 key={index}
                 className="w-[40px] h-[40px] rounded-full border-2 border-white  flex items-center justify-center md:w-[40px] md:h-[40px]"
               >
                 <item.iconUrl size={20} />
-              </span>
+              </Link>
             ))}
           </div>
           <div className="mt-6 lg:flex gap-2 dark:text-muted-foreground">

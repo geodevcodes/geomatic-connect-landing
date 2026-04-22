@@ -31,9 +31,8 @@ export default function ContactUs() {
             <motion.a
               whileHover={{
                 scale: 1.03,
-                // boxShadow: "0px 0px 8px rgb(255, 255, 255)",
               }}
-              href="https://api.whatsapp.com/send/?phone=2348133642798&text=Welcome+to+Geomatic+Connect%2C+please+ask+me+any+question+regarding+our+products+and+services&type=phone_number&app_absent=0"
+              href="mailto:support@geomaticconnect.work?subject=Inquiry%20about%20Geomatic%20Connect&body=Hello%2C%20I%20would%20like%20to%20learn%20more%20about%20Geomatic%20Connect%20and%20how%20it%20connects%20students%20with%20companies%20for%20SIWES%20and%20IT%20internship%20opportunities.%20Kindly%20provide%20more%20information."
               target="_blank"
               className="p-3 lg:p-4 bg-[#014751] hover:bg-[#014751]/90 dark:bg-muted dark:hover:bg-primary-foreground text-[#FFFFFF] rounded-xl dark:rounded-lg w-[150px] md:w-[180px] text-center flex items-center justify-center cursor-pointer text-sm"
             >
@@ -42,7 +41,6 @@ export default function ContactUs() {
             <motion.div
               whileHover={{
                 scale: 1.03,
-                // boxShadow: "0px 0px 8px rgb(255, 255, 255)",
               }}
               className="w-fit"
             >

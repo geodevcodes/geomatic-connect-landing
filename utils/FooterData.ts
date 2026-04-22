@@ -27,11 +27,36 @@ export const footerData = {
   socialMediaData: {
     name: "Social Media",
     socialMedia: [
-      { id: 1, name: "Github", href: "#", iconUrl: BsGithub },
-      { id: 2, name: "X", href: "#", iconUrl: FaTwitter },
-      { id: 3, name: "LinkedIn", href: "#", iconUrl: FaLinkedinIn },
-      { id: 4, name: "Facebook", href: "#", iconUrl: RiFacebookCircleFill },
-      { id: 5, name: "Youtube", href: "#", iconUrl: BsYoutube },
+      {
+        id: 1,
+        name: "Github",
+        href: "http://github.com/geomaticconnect",
+        iconUrl: BsGithub,
+      },
+      {
+        id: 2,
+        name: "X",
+        href: "https://twitter.com/geomaticconnect",
+        iconUrl: FaTwitter,
+      },
+      {
+        id: 3,
+        name: "LinkedIn",
+        href: "http://linkedin.com/company/geomaticconnect",
+        iconUrl: FaLinkedinIn,
+      },
+      {
+        id: 4,
+        name: "Facebook",
+        href: "https://web.facebook.com/profile.php?id=61576119003282",
+        iconUrl: RiFacebookCircleFill,
+      },
+      {
+        id: 5,
+        name: "Youtube",
+        href: "https://www.youtube.com/@geomaticconnect",
+        iconUrl: BsYoutube,
+      },
     ],
   },
 };
