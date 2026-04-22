@@ -51,9 +51,9 @@ export default function Hero() {
             }}
             className="w-fit"
           >
-            <button className="bg-secondary dark:bg-muted px-6 py-2.5 text-sm font-normal text-primary dark:text-[#FFFFFF] rounded-md relative group">
+            <button className="bg-sidebar border border-border  dark:bg-muted px-6 py-2.5 text-sm font-normal text-primary dark:text-[#FFFFFF] rounded-md relative group">
               <Link
-                href="https://staging.geomaticconnect.work/signup"
+                href="https://app.geomaticconnect.work/signup"
                 className="relative flex gap-2 items-center"
               >
                 <span>Create free account</span>
@@ -67,8 +67,8 @@ export default function Hero() {
               scale: 1.03,
             }}
           >
-            <button className="bg-secondary border dark:border-muted dark:hover:bg-muted px-5 py-2.5 text-sm font-normal text-primay dark:text-[#FFFFFF] rounded-md hidden md:flex items-center">
-              <Link href="https://staging.geomaticconnect.work/blog">
+            <button className="bg-sidebar border border-border dark:border-muted dark:hover:bg-muted px-5 py-2.5 text-sm font-normal text-primay dark:text-[#FFFFFF] rounded-md hidden md:flex items-center">
+              <Link href="https://app.geomaticconnect.work/blog">
                 Explore career tips
               </Link>
             </button>
