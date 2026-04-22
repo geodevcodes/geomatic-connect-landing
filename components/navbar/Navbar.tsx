@@ -110,7 +110,7 @@ export default function Navbar() {
             </div>
             {/* ======== Login & Sign Up ====== */}
             <Link
-              href="https://staging.geomaticconnect.work"
+              href="https://app.geomaticconnect.work/"
               className="relative group p-3 font-medium rounded-md mx-2 hover:text-[#014751] dark:hover:text-secondary-foreground"
             >
               Login
