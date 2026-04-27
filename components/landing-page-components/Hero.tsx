@@ -68,7 +68,7 @@ export default function Hero() {
             }}
           >
             <button className="bg-sidebar border border-border dark:border-muted dark:hover:bg-muted px-5 py-2.5 text-sm font-normal text-primay dark:text-[#FFFFFF] rounded-md hidden md:flex items-center">
-              <Link href="https://app.geomaticconnect.work/blog">
+              <Link href="https://geomaticconnect.work/blog">
                 Explore career tips
               </Link>
             </button>
