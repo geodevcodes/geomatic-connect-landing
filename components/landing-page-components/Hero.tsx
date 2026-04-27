@@ -1,5 +1,6 @@
 "use client";
 import HeroImage from "@/public/images/prototype.png";
+import HeroImageDark from "@/public/images/prototype-dark.png";
 import { companionData } from "@/utils/CompanionData";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
@@ -25,7 +26,7 @@ export default function Hero() {
               <div className="inline-flex h-full w-full cursor-pointer justify-center rounded-full bg-white px-3 py-1 text-xs font-medium leading-5 text-slate-600 backdrop-blur-xl dark:bg-black dark:text-slate-200">
                 New snippets ⚡️
                 <span className="inline-flex items-center pl-2 text-black dark:text-white">
-                  Read more{" "}
+                  Read more
                   <ArrowRight
                     className="pl-0.5 text-black dark:text-white"
                     size={16}
@@ -91,7 +92,14 @@ export default function Hero() {
             alt="application prototype picture"
             fill
             priority
-            className="rounded-lg border-[0.5px] border-slate-300 object-contain dark:object-fill dark:invert"
+            className="rounded-lg border-[0.3px] object-fill dark:hidden"
+          />
+          <Image
+            src={HeroImageDark}
+            alt="application prototype picture"
+            fill
+            priority
+            className="rounded-lg border-[0.3px]  object-contain hidden dark:object-fill dark:block"
           />
         </motion.div>
       </div>
