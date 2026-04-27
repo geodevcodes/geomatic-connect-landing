@@ -37,10 +37,13 @@ export default function Hero() {
           </a>
         </div>
         <div className="text-center px-4">
-          <h2 className="text-[48px] md:text-[64px] px-3 md:px-0 font-semibold md:font-bold text-[#F51767] text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 to-pink-500">
+          <h2
+            className="text-[48px] md:text-[64px] px-3 md:px-0 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 to-pink-500 tracking-tight leading-[1.1]"
+            style={{ fontFamily: "var(--font-bricolage)" }}
+          >
             Start landing offers.
           </h2>
-          <p className="text-lg font-medium md:font-semibold px-3 mt-3.5 md:max-w-[500px] lg:max-w-[600px] md:mx-auto text-[#56616e] dark:text-muted-foreground">
+          <p className="text-lg font-medium md:font-semibold px-3 mt-3.5 md:max-w-[500px] lg:max-w-[600px] md:mx-auto text-[#56616e] dark:text-muted-foreground leading-relaxed">
             The most efficient and supportive way for you to get connected,
             build real-world skills and advance your career.
           </p>

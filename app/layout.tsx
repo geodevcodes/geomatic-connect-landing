@@ -1,7 +1,7 @@
 import { PWAInstallPrompt } from "@/components/pwa-install/PWAInstallPrompt";
 import SessionProviderPage from "@/providers/session-providers";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Bricolage_Grotesque } from "next/font/google";
 import type { Metadata } from "next";
 import { Toaster } from "sonner";
 import "./globals.css";
@@ -20,6 +20,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const bricolage = Bricolage_Grotesque({
+  variable: "--font-bricolage",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -53,7 +59,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#F2F6F6" />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${bricolage.variable} antialiased`}
       >
         <SessionProviderPage>
           <ThemeProvider
