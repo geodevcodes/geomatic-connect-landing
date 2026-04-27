@@ -4,7 +4,7 @@ export const faqData = [
     id: 1,
     question: "What is Geomatic Connect and who can use it?",
     answer:
-      "Geomatic Connect is a platform that connects students from higher institutions with companies offering internship opportunities like SIWES, SWEP, and professional training programs. Both students seeking placements and companies looking for qualified candidates can use the platform.",
+      "Geomatic Connect is a platform that connects students from higher institutions with companies offering internship opportunities like SIWES, SWEP, IT and professional training programs. Both students seeking placements and companies looking for qualified candidates can use the platform.",
   },
   {
     id: 2,
